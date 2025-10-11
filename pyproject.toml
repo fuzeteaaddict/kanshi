@@ -1,0 +1,17 @@
+[project]
+name = "kanshi"
+version = "0.1.0"
+description = "monitor your infra from your terminal"
+requires-python = ">=3.8"
+dependencies = [
+  "requests",
+  "rich"
+]
+
+[project.scripts]
+mypkg = "kanshi.__main__:kanshi"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
